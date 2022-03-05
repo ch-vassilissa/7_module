@@ -8,5 +8,5 @@
 # Шаг 3. Запустите контейнер. Если вы все сделали правильно, он выведет секретный код. Введите его в поле ниже.
 FROM mike0sv/sf_docker_base # создать свой образ на основе образа mike0sv/sf_docker_base
 WORKDIR ./Files/
-COPY ./Files/my_files.txt ./ # добавить в него текстовый файл с фразой I know how to use docker
+COPY my_files.txt ./ # добавить в него текстовый файл с фразой I know how to use docker ./Files/my_files.txt ./
 ENV DATA_PATH ./Files/my_files.txt
